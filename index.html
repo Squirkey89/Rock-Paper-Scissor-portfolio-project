@@ -1,13 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css stylesheet and google fonts-->
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Serif&display=swap');</style>
+    <title>Rock Scissors Paper</title>
+    <meta name="description" content="">
 </head>
+
 <body>
-    
+    <!--Header text-->
+    <Header>
+    <h1>
+        Rock, Scissors, Paper
+    </h1>
+    </Header>
+    <img class="logo" src="assets/images/rock-paper-scissors-neon-icons-vector.jpg"
+        alt="rock paper scissors hand gestures">
+   
+    <div>
+    <ul>
+        <!--Game instructions-->
+        <h1>The rules</h1>
+        <li>
+            Play the classic game of Rock,Paper Scissors against the computer.
+        </li>
+        <li>
+            Choose from the buttons below and wait for the computer to make their choice.
+        </li>
+        <li>
+            Rock defeats scissors.
+        </li>
+        <li>
+            Scissors defeats Paper.
+        </li>
+        <li>
+            And Paper defeats rock.
+        </li>
+    </ul>
+    </div>
+    <div>
+        <!--Choice and score display-->
+        <h1>The Game</h1>
+        <h2>Computer<span id="computer"></span></h2>
+        <h2>User<span id ="user"></span></h2>
+        <h2>Score<span id="score"></span></h2>
+    </div>
+    <!--Game controls-->
+    <div class="controls">
+        <h1>The Controls</h1>
+        <button><i class="far fa-hand-rock"></i><br>Rock</button>
+        <button><i class="far fa-hand-scissors"></i><br>Scissors</button>
+        <button><i class="far fa-hand-paper"></i><br>Paper</button>
+    </div>
+    <!--JavaScript file path and fontawesome kit-->
     <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/97488dfb41.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
