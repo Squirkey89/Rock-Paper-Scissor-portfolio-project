@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+  }
+
 /* Add style to the body of webpage */
 body{
     background-color: rgb(168, 194, 243);
@@ -54,13 +59,31 @@ button:hover{
     width: 40%;
 }
 
-.rock{
-    height: 300px;
-}
-
-.paper{
+.img{
     height: 300px;
 }
 .controls{
 clear: both;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo{
+        width: 100%;
+        padding: 0, 50px 0, 50px;
+    }
+    .img{
+        width: 85%;
+    }
+    
+    button{
+        font-size: 0.9em;
+        height: 70px;
+        width: 100px;
+        margin: 0;
+        margin-bottom: 150px;
+    }
+    ul{
+        padding: 10px;
+    }
+
 }
