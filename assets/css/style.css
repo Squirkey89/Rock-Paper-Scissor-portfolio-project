@@ -12,16 +12,26 @@ body{
     font-size: 1.5em;
     text-align: center;
 }
+
+header{
+    margin-bottom: 20px;
+    background-color: #839ef8;
+    border-bottom: 1px solid rgb(72, 129, 235);
+    height: 100px;
+}
+
 /* Style the main logo */
 .logo{
     height: 400px;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    margin-bottom: 40px;
 }
 
 ul{
     list-style-position: inside;
+    margin-bottom: 40px;
 }
 
 button{
