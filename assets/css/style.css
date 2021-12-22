@@ -17,16 +17,37 @@ body{
 
 ul{
     list-style-position: inside;
-
 }
 
 button{
     height: 100px;
     width: 130px;
     font-size: 1.3em;
-    border-radius: 25px;
+    border-radius: 30px;
+    border: 2px black solid;
+    background-color: red;
+    color: white;
+    margin: 50px 30px;
 }
 button:hover{
-    color: rgb(111, 157, 243);
+    color: black;
     cursor: pointer;
+}
+.far{
+    color: white;
+}
+.far:hover{
+    color: black;
+    cursor: pointer;
+}
+ 
+.computer-choice{
+    float: left;
+    width: 40%;
+
+}
+
+.user-choice{
+    float: right;
+    width: 40%;
 }
