@@ -27,7 +27,9 @@ button{
     border: 2px black solid;
     background-color: red;
     color: white;
-    margin: 50px 30px;
+    margin: 20px;
+    margin-top: -10;
+    margin-bottom: 100px;
 }
 button:hover{
     color: black;
@@ -50,4 +52,15 @@ button:hover{
 .user-choice{
     float: right;
     width: 40%;
+}
+
+.rock{
+    height: 300px;
+}
+
+.paper{
+    height: 300px;
+}
+.controls{
+clear: both;
 }
