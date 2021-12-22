@@ -1,15 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+/* Add style to the body of webpage */
 body{
     background-color: rgb(168, 194, 243);
     font-family: 'Pacifico', 'cursive';
     font-size: 1.5em;
     text-align: center;
 }
-
+/* Style the main logo */
 .logo{
     height: 400px;
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+ul{
+    list-style-position: inside;
+
+}
+
+button{
+    height: 100px;
+    width: 130px;
+    font-size: 1.3em;
+    border-radius: 25px;
+}
+button:hover{
+    color: rgb(111, 157, 243);
+    cursor: pointer;
 }
