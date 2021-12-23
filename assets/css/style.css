@@ -69,8 +69,17 @@ button:hover{
     width: 40%;
 }
 
-.img{
+.img-rock{
     height: 300px;
+    display: none;
+}
+.img-scissors{
+    height: 300px;
+    display: none;
+}
+.img-paper{
+    height: 300px;
+
 }
 .controls{
 clear: both;
