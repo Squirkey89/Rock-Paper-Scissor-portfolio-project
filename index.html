@@ -42,24 +42,27 @@
         <h1>The Game</h1>
         <h2>Score<span id="score"></span></h2>
         <div class= computer-choice>
-        <h2>Computer:<span id="computer">0</span></h2>
+        <h2>Computer</h2>
         <img class="img-rock" src="assets/images/rock.png" alt="rock" onclick="userPick('rock')">
         <img class="img-paper" src="assets/images/paper.png" alt="paper" onclick="userPick('scissors')">
         <img class="img-rock" src="assets/images/scissors.png" alt="scissors" onclick="userPick('scissors')">
+        <span id="computer-score"><br>Score: 0</span>
+
         </div>
         <div class= user-choice>
-        <h2>User:<span id ="user">0</span></h2>
+        <h2>User</h2>
         <img class="img-paper" src="assets/images/paper.png" alt="scissors" onclick="userPick('scissors')">
         <img class="img-rock" src="assets/images/rock.png" alt="rock" onclick="userPick('rock')">
         <img class="img-scissors" src="assets/images/scissors.png" alt="scissors" onclick="userPick('scissors')">
+        <span id ="user-score"><br>Score: 0</span>
         </div>
     </div>
     <!--Game controls-->
     <div class="controls">
         <h2>The Controls</h2>
-        <button><i class="far fa-hand-rock" onclick="userPick('rock')"></i><br>Rock</button>
-        <button><i class="far fa-hand-paper" onclick="userPick('paper')"></i><br>Paper</button>
-        <button><i class="far fa-hand-scissors"onclick="userPick('scissors')"></i><br>Scissors</button>
+        <button><i class="far fa-hand-rock" onclick="userPick('rock')" id="rock"></i><br>Rock</button>
+        <button><i class="far fa-hand-paper" onclick="userPick('paper')" id="paper"></i><br>Paper</button>
+        <button><i class="far fa-hand-scissors"onclick="userPick('scissors')"id="scissors"></i><br>Scissors</button>
     </div>
     <!--JavaScript file path and fontawesome kit-->
     <script src="assets/js/script.js"></script>
