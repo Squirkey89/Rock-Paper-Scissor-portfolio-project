@@ -96,6 +96,22 @@ clear: both;
     .img{
         width: 85%;
     }
+    .img-rock{
+        height: 200px;
+        display: none;
+        width: 60%;
+    }
+    
+    .img-scissors{
+        height: 200px;
+        display: none;
+        width: 60%;
+    }
+
+    .img-paper{
+        height: 200px;
+        width: 60%;
+    }
     
     button{
         font-size: 0.9em;
