@@ -23,12 +23,35 @@ header{
 }
 
 /* Style the main logo */
+
+ul{
+    margin-top: 50px;
+}
+
+
+#image-container{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 250px;
+    justify-content: center;
+    justify-content: space-around;
+
+    
+}
+
 .logo{
-    height: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-bottom: 40px;
+    height: 180px;
+    width: 180px;
+    padding-top: 1px;
+    border: 5px solid white;
+
+}
+
+.logo:hover{
+    cursor: pointer;
+    transition: 3.0ms;
+    background-color: white;
 }
 
 ul{
@@ -36,111 +59,29 @@ ul{
     margin-bottom: 40px;
 }
 
-button{
-    height: 100px;
-    width: 130px;
-    font-size: 1.3em;
-    border-radius: 30px;
-    border: 2px black solid;
-    background-color: red;
-    color: white;
-    margin: 20px;
-    margin-top: -10;
-    margin-bottom: 100px;
-}
-button:hover{
-    color: black;
-    cursor: pointer;
-}
-.far{
-    color: white;
-}
-.far:hover{
-    color: black;
-    cursor: pointer;
-}
  
-.computer-choice{
+.computer{
     float: left;
     width: 40%;
+    justify-content: center;
+    align-items: center;
 
 }
 
-.user-choice{
+.user{
     float: right;
     width: 40%;
+    justify-content: center;
+    align-items: center;
 }
 
-.img-rock{
-    height: 300px;
-    display: none;
-}
-.img-scissors{
-    height: 300px;
-    display: none;
-}
-.img-paper{
-    height: 300px;
-
-}
-.controls{
-    padding-top: 20px;
-    clear: both;
-}
-#computer-score{
-    font-size: 1.2em;
-    float: right;
-    width: 40%;
-    line-height: 2px;
+#choice-container{
+    height: 600px;
 
 }
 
-#user-score{
-    font-size: 1.3em;
-    float: left;
-    width: 40%;
-    line-height: 2px;
-
-
-}
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 450px) {
     header{
         height: 160px;
     }
-    .logo{
-        width: 100%;
-        padding: 0, 50px 0, 50px;
-        margin-top:70px;    }
-    .img{
-        width: 85%;
-    }
-    .img-rock{
-        height: 200px;
-        display: none;
-        width: 60%;
-    }
-
-    .img-scissors{
-        height: 200px;
-        display: none;
-        width: 60%;
-    }
-
-    .img-paper{
-        height: 200px;
-        width: 60%;
-    }
-    
-    button{
-        font-size: 0.9em;
-        height: 70px;
-        width: 100px;
-        margin: 0;
-        margin-bottom: 150px;
-    }
-    ul{
-        padding: 10px;
-    }
-
 }

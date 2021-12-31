@@ -19,10 +19,8 @@
             Rock, Paper, Scissors
         </h1>
     </Header>
-    <img class="logo" src="assets/images/rockpaperscissors.png" alt="rock paper scissors hand gestures">
-
     <div>
-        <ul>
+        <ul id="instructions">
             <!--Game instructions-->
             <h1>Instructions</h1>
             <li>
@@ -36,32 +34,28 @@
             </li>
         </ul>
     </div>
-    <div>
-        <!--Choice and score display-->
-        <h1>The Game</h1>
-        <div class=computer-choice>
-            <h2>Computer</h2>
-            <img class="img-rock" src="assets/images/rock.png" alt="rock" onclick="userPick('rock')">
-            <img class="img-paper" src="assets/images/paper.png" alt="paper" onclick="userPick('scissors')">
-            <img class="img-rock" src="assets/images/scissors.png" alt="scissors" onclick="userPick('scissors')">
-        </div>
-        <div class=user-choice>
-            <h2>User</h2>
-            <img class="img-paper" src="assets/images/paper.png" alt="scissors" onclick="userPick('scissors')">
-            <img class="img-rock" src="assets/images/rock.png" alt="rock" onclick="userPick('rock')">
-            <img class="img-scissors" src="assets/images/scissors.png" alt="scissors" onclick="userPick('scissors')">
-        </div>
-        <div>    
-            <span id="computer-score"><br>Score: 0</span>
-            <span id="user-score"><br>Score: 0</span>
-        </div>
+    <h1>The Game</h1>
+    <div id="image-container">
+    <div id = "rock">
+        <img class="logo" src="assets/images/rock.png" alt="rock">
     </div>
-    <!--Game controls-->
-    <div class="controls">
-        <h2>The Controls</h2>
-        <button><i class="far fa-hand-rock" onclick="userPick('rock')" id="rock"></i><br>Rock</button>
-        <button><i class="far fa-hand-paper" onclick="userPick('paper')" id="paper"></i><br>Paper</button>
-        <button><i class="far fa-hand-scissors" onclick="userPick('scissors')" id="scissors"></i><br>Scissors</button>
+    <div id ="paper">
+        <img class="logo" src="assets/images/paper.png" alt="paper">
+    </div>    
+    <div id ="scissors">        
+        <img class="logo" src="assets/images/scissors.png" alt="scissors">
+    </div>
+    </div>
+    <div id="choice-container">
+        <!-- Computer and user Choice and score-->
+        <div class=computer>
+            <h2>Computer: <span id ="computer-score">0</span></h2>
+            
+        </div>
+        <div class=user>
+            <h2>User: <span id ="user-score">0</span></h2>
+            
+        </div>
     </div>
     <!--JavaScript file path and fontawesome kit-->
     <script src="assets/js/script.js"></script>
