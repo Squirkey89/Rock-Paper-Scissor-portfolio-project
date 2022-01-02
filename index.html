@@ -34,7 +34,17 @@
             </li>
         </ul>
     </div>
-    <h1>The Game</h1>
+    <div id ="Game"><h1>The Game</h1></div>
+    <div id="score-container">
+        <!-- Computer and user Choice and score-->
+        <div class=computer>
+            <h2>Computer: <span id ="computer-score">0</span></h2>
+            
+        </div>
+        <div class=user>
+            <h2>User: <span id ="user-score">0</span></h2>
+        </div>
+        </div>
     <div id="image-container">
     <div id = "rock">
         <img class="rps" src="assets/images/rock.png" alt="rock">
@@ -46,20 +56,10 @@
         <img class="rps" src="assets/images/scissors.png" alt="scissors">
     </div>
     </div>
-    <div id="choice-container">
-        <!-- Computer and user Choice and score-->
-        <div class=computer>
-            <h2>Computer: <span id ="computer-score">0</span></h2>
-            
-        </div>
-        <div class=user>
-            <h2>User: <span id ="user-score">0</span></h2>
-            
-        </div>
-    </div>
+    <div id="result">You win! Rock beats paper!!</div>
+
     <!--JavaScript file path and fontawesome kit-->
     <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/97488dfb41.js" crossorigin="anonymous"></script>
 </body>
-
 </html>
