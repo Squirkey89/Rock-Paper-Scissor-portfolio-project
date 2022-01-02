@@ -38,6 +38,9 @@ ul{
     height: 200px;
     justify-content: center;    
 }
+img{
+    height: 150px;
+}
 
 #rock{
     margin-right: 10px;
@@ -50,7 +53,7 @@ ul{
 .rps{
     padding-top: 20px;
     background-color: #05258f;
-    height: 160px;
+    height: 180px;
     width: 160px;
     padding-top: 1px;
     border: 5px solid white;
