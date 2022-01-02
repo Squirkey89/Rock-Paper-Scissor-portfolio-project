@@ -36,10 +36,7 @@ ul{
     margin-bottom: 50px;
     padding-top: 10px;
     height: 200px;
-    justify-content: center;
-
-
-    
+    justify-content: center;    
 }
 
 #rock{
@@ -58,14 +55,14 @@ ul{
     padding-top: 1px;
     border: 5px solid white;
     border-radius: 15px;
-    transition: opacity 0.5s ease;
 
 }
 
 .rps:hover{
     cursor: pointer;
-    transition: 3.0ms;
     background-color: #5273df;
+    transition: 0.10s;
+
 }
 
 ul{
