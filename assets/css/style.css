@@ -68,7 +68,7 @@ img {
 .rps:hover {
     cursor: pointer;
     background-color: #5273df;
-    transition: 0.10s;
+    transform: scale(1.1);
 
 }
 
@@ -160,20 +160,24 @@ ul {
         margin-top: 20px;
 
     }
+
     #score-container {
         padding-bottom: 10px;
-    
+
     }
-    .rps{
+
+    .rps {
         height: 180px;
         width: 180px;
     }
+
     #image-container {
-        margin-top: 30px;    
+        margin-top: 30px;
     }
 
 
 }
+
 @media only screen and (max-width: 696px) {
     .computer {
         margin-left: 50px;
@@ -185,33 +189,70 @@ ul {
         width: 30%;
 
     }
-    
-    
-}
-@media only screen and (max-width: 571px){
 
-.rps{
-    height: 140px;
-    width: 140px;
+
 }
-img {
-    height: 100px;
+
+@media only screen and (max-width: 571px) {
+
+    .rps {
+        height: 140px;
+        width: 140px;
+    }
+
+    img {
+        height: 100px;
+    }
 }
-}
-@media only screen and (max-width: 482px){
-    header{
+
+@media only screen and (max-width: 482px) {
+    header {
         height: 150px;
     }
-    body{
+
+    body {
         font-size: 1.1em;
     }
 
     #rock {
-    margin-right: 0;
-}
+        margin-right: 0;
+    }
 
     #scissors {
-    margin-left:0;
-}
+        margin-left: 0;
+    }
 
+    .rps {
+        height: 100px;
+        width: 100px;
+    }
+
+    img {
+        height: 80px;
+    }
+
+    #image-container {
+        margin: 0;
+
+    }
+
+    .user {
+        margin-right: 40px;
+    }
+
+    .computer {
+        margin-left: 40px;
+    }
+}
+@media only screen and (max-width: 338px){
+    .user{
+        margin-right: 10px;
+        width: 120px;
+
+    }
+    .computer{
+        margin-left: 10px;
+        width: 120px;
+
+    }
 }
