@@ -20,3 +20,29 @@ function generateComputerChoice() {
 	let randomNumber = Math.floor(Math.random() * choices.length);
 	return choices[randomNumber];
 }
+
+function mainGame(userChoice) {
+	let computerChoice = generateComputerChoice()
+	if (computerChoice === 'rock' && userChoice === 'paper') {
+		document.getElementById('result').innerHTML = "You chose paper. Computer chose rock"
+	}
+	if (computerChoice === 'paper' && userChoice === 'scissors') {
+		document.getElementById('result').innerHTML = "You chose paper. Computer chose rock"
+	}
+	if (computerChoice === 'scissors' && userChoice === 'rock') {
+		document.getElementById('result').innerHTML = "You chose rock. Computer chose scissors"
+	}
+	if (computerChoice === 'paper' && userChoice === 'rock') {
+		document.getElementById('result').innerHTML = "You chose rock. Computer chose paper"
+	}
+	if (computerChoice === 'scissors' && userChoice === 'paper') {
+		document.getElementById('result').innerHTML = "You chose paper. Computer chose scissors"
+	}
+	if (computerChoice === 'rock' && userChoice === 'scissors') {
+		document.getElementById('result').innerHTML = "You chose scissors. Computer chose rock"
+	}
+	else if(computerChoice === userChoice)
+		{document.getElementById('result').innerHTML = "Its a tie game!"
+	}
+	
+}
