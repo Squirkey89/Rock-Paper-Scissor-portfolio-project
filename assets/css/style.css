@@ -3,10 +3,10 @@
 * {
     margin: 0;
     padding: 0;
-  }
+}
 
 /* Add style to the body of webpage */
-body{
+body {
     background-color: rgb(14, 90, 231);
     font-family: 'Pacifico', 'cursive';
     font-size: 1.5em;
@@ -15,73 +15,79 @@ body{
     text-shadow: 3px 3px 0px black;
 }
 
-header{
+header {
     margin-bottom: 20px;
     background-color: #05258f;
     border-bottom: 5px solid white;
     height: 120px;
 }
-header h1{
+
+header h1 {
     padding-top: 20px;
 }
+
 /* Style the main logo */
 
-ul{
+ul {
     margin-top: 50px;
 }
 
-#image-container{
+#image-container {
     display: flex;
     margin-top: 100px;
     margin-bottom: 50px;
     padding-top: 10px;
     height: 200px;
-    justify-content: center;    
+    justify-content: center;
 }
-img{
+
+img {
     height: 150px;
 }
 
-#rock{
+#rock {
     margin-right: 10px;
 }
-#scissors{ 
+
+#scissors {
     margin-left: 10px
 }
 
 
-.rps{
+.rps {
     padding-top: 20px;
     background-color: #05258f;
-    height: 180px;
-    width: 160px;
+    height: 200px;
+    width: 200px;
     padding-top: 1px;
     border: 5px solid white;
     border-radius: 15px;
 
 }
 
-.rps:hover{
+.rps:hover {
     cursor: pointer;
     background-color: #5273df;
     transition: 0.10s;
 
 }
 
-ul{
+ul {
     list-style-position: inside;
     margin-bottom: 40px;
 }
 
 
-#score-container{
+#score-container {
     height: 150px;
     margin-bottom: 0px;
     background-color: rgb(14, 90, 231);
 
 
 }
-.computer, .user{
+
+.computer,
+.user {
     font-size: 0.9em;
     background-color: #05258f;
     width: 20%;
@@ -94,26 +100,118 @@ ul{
 
 }
 
-.computer{
+.computer {
     float: left;
     margin-left: 400px;
+    padding-bottom: 5px;
 }
 
-.user{
+.user {
     float: right;
     margin-right: 400px;
+    padding-bottom: 5px;
 
-    
+
+
 }
-#result{
+
+#result {
     height: 150px;
     margin-bottom: 100px;
     font-size: 1.6em;
 }
 
 
-@media only screen and (max-width: 657px) {
-    header{
-        height: 180px;
+@media only screen and (max-width: 1383px) {
+    .computer {
+        margin-left: 300px;
     }
+
+    .user {
+        margin-right: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 1075px) {
+    .computer {
+        margin-left: 200px;
+    }
+
+    .user {
+        margin-right: 200px;
+    }
+
+}
+
+@media only screen and (max-width: 898px) {
+    .computer {
+        margin-left: 150px;
+    }
+
+    .user {
+        margin-right: 150px;
+    }
+
+    .computer,
+    .user {
+
+        font-size: 0.7em;
+        margin-top: 20px;
+
+    }
+    #score-container {
+        padding-bottom: 10px;
+    
+    }
+    .rps{
+        height: 180px;
+        width: 180px;
+    }
+    #image-container {
+        margin-top: 30px;    
+    }
+
+
+}
+@media only screen and (max-width: 696px) {
+    .computer {
+        margin-left: 50px;
+        width: 30%;
+    }
+
+    .user {
+        margin-right: 50px;
+        width: 30%;
+
+    }
+    
+    
+}
+@media only screen and (max-width: 571px){
+
+.rps{
+    height: 140px;
+    width: 140px;
+}
+img {
+    height: 100px;
+}
+}
+@media only screen and (max-width: 482px){
+    header{
+        height: 150px;
+    }
+    body{
+        font-size: 1.1em;
+    }
+
+    #rock {
+    margin-right: 0;
+}
+
+    #scissors {
+    margin-left:0;
+}
+
 }
