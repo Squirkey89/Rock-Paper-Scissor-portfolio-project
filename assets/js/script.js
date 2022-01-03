@@ -50,6 +50,7 @@ function mainGame(userChoice) {
 	}
 	else if(computerChoice === userChoice)
 		{document.getElementById('message').innerHTML = "Its a tie game!"
+		drawGame()
 	}
 	
 }
@@ -61,15 +62,11 @@ function userWin(){
 function computerWin(){
 	let oldScore = parseInt(document.getElementById("computer-score").innerText);
 	document.getElementById("computer-score").innerText = ++oldScore;	
-	document.getElementById("result").innerHTML='You Lose'
+	document.getElementById("result").innerHTML='You Lose!'
+	sty
 
 }
-let result
 
 function drawGame(){
-	 if(computerChoice === userChoice){
-		result.style.display(hidden)
-	}}
-
-result.addEventListener('click', function() {
-	drawGame()})
+	document.getElementById("result").innerHTML=''
+};
