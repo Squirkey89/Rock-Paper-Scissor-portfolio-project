@@ -2,7 +2,6 @@
 
 /**Dom Manipulators */
 const buttons = document.getElementsByTagName("button");
-const rps = document.getElementByClassName('rps')
 const compScoreDisplayed = document.getElementById('computer-score');
 const userScoreDisplayed = document.getElementById('user-score');
 const message = document.getElementById('message');
@@ -97,9 +96,11 @@ function gameOver() {
 }
 
 function beginGame() {
+	let elements = document.getElementsByClassName("rps");
 	instruction.style.display = "none";
 	startGame.style.display = "none";
-	rps.style.display ="flex";
+	elements.style.display = "flex";
+
 
 
 }
