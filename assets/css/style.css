@@ -125,6 +125,24 @@ ul {
     margin-bottom: 100px;
     font-size: 1.6em;
 }
+#restart {
+    font-size: 0.9em;
+    background-color: #05258f;
+    border: 5px solid white;
+    font-family: 'Pacifico', 'cursive';
+    height: 80px;
+    width: 140px;
+    border-radius: 40px;
+    color: white;
+    display: none;
+
+}
+#restart:hover {
+    cursor: pointer;
+    background-color: #5273df;
+    transform: scale(1.1);
+
+}
 
 
 @media only screen and (max-width: 1383px) {

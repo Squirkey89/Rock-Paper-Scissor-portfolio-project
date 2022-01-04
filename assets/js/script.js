@@ -1,10 +1,14 @@
 
+/*jshint esversion: 6 */
+
 /**Dom Manipulators */
+const buttons = document.getElementsByTagName("button");
 const compScoreDisplayed = document.getElementById('computer-score');
 const userScoreDisplayed = document.getElementById('user-score');
 const message = document.getElementById('message');
 const results = document.getElementById('result');
-const buttons = document.getElementsByTagName("button");
+const replay = document.getElementById("restart");
+
 
 
 for (let button of buttons) {
@@ -47,7 +51,7 @@ function mainGame(userChoice) {
 		computerWin();
 	}
 	else if(computerChoice === userChoice)
-		{document.getElementById('message').innerHTML = "Its a tie game!";
+		{document.getElementById('message').innerHTML = "Its a draw!";
 		drawGame();
 	}
 	
@@ -56,15 +60,42 @@ function userWin(){
 	let userScoreDisplayed = parseInt(document.getElementById("user-score").innerText);
 	document.getElementById("user-score").innerText = ++userScoreDisplayed;	
 	document.getElementById("result").innerHTML='You win!';
+	if (userScoreDisplayed == 5) {
+		winGame();}
 }
 function computerWin(){
 	let compScoreDisplayed = parseInt(document.getElementById("computer-score").innerText);
 	document.getElementById("computer-score").innerText = ++compScoreDisplayed;	
 	document.getElementById("result").innerHTML='You Lose!';
-	
+	if (compScoreDisplayed == 5) {
+		gameOver();}
 
 }
 
 function drawGame(){
 	document.getElementById("result").innerHTML='';
+
 }
+function winGame(){
+	document.getElementById("result").innerHTML='Congratulations Youve won the game!';
+	document.getElementById("message").innerHTML='';
+	document.getElementById("computer-score").innerText = 0;
+	document.getElementById("user-score").innerText = 0;}
+	
+function gameOver(){
+	document.getElementById("result").innerHTML='You have lost the game!';
+	document.getElementById("message").innerHTML='';
+	document.getElementById("computer-score").innerText = 0;
+	document.getElementById("user-score").innerText = 0;
+}
+
+function restart(){
+
+	document.getElementById("computer-score").innerText = 0;
+	document.getElementById("user-score").innerText = 0;
+
+}
+
+replay.addEventListener('click', restart);
+
+
