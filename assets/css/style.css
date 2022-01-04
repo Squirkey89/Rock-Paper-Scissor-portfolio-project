@@ -39,6 +39,7 @@ ul {
     padding-top: 10px;
     height: 200px;
     justify-content: center;
+    
 }
 
 img {
@@ -53,6 +54,18 @@ img {
     margin-left: 10px
 }
 
+#instructions{
+    background-color: #05258f;
+    height:300px ;
+    width: 400px;
+    margin: auto 0px;
+    border: 5px solid white;
+    border-radius: 40px;
+
+
+}
+    
+
 
 .rps {
     padding-top: 20px;
@@ -62,6 +75,7 @@ img {
     padding-top: 1px;
     border: 5px solid white;
     border-radius: 15px;
+    display: none;
 
 }
 
@@ -131,10 +145,10 @@ ul {
     border: 5px solid white;
     font-family: 'Pacifico', 'cursive';
     height: 80px;
-    width: 140px;
+    width: 190px;
     border-radius: 40px;
     color: white;
-    display: none;
+    margin-top: 10px;
 
 }
 #restart:hover {

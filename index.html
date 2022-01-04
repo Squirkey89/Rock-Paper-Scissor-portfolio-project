@@ -19,8 +19,8 @@
             Rock, Paper, Scissors
         </h1>
     </Header>
-    <div>
-        <ul id="instructions">
+    <section>
+        <ul>
             <!--Game instructions-->
             <h1>Instructions</h1>
             <li>
@@ -33,36 +33,45 @@
                 Rock defeats scissors, Scissors defeats Paper, and Paper defeats rock.
             </li>
         </ul>
+    </section>
+    <div id="Game">
+        <h1>The Game</h1>
     </div>
-    <div id ="Game"><h1>The Game</h1></div>
     <div id="score-container">
         <!-- Computer and user Choice and score-->
         <div class=computer>
-            <h2>Computer: <span id ="computer-score">0</span></h2>
-            
+            <h2>Computer: <span id="computer-score">0</span></h2>
+
         </div>
         <div class=user>
-            <h2>User: <span id ="user-score">0</span></h2>
+            <h2>User: <span id="user-score">0</span></h2>
         </div>
-        </div>
+    </div>
     <div id="image-container">
-    <div id = "rock">
-        <button class="rps" data-choice = "rock"><img src="assets/images/rock.png"></button>
-    </div>
-    <div id ="paper">
-        <button class="rps" data-choice = "paper"><img src="assets/images/paper.png" alt="paper"></button>
-    </div>    
-    <div id ="scissors">        
-        <button class="rps" data-choice = "scissors"><img src="assets/images/scissors.png" alt="scissors"></button>
-    </div>
+        <div id=instructions><p>You choose first and then the computer wil make a decision</p>
+            <p>The first to score five wins the game.</p>
+            <p>Best of Luck</p>
+            <div id="rock">
+                <button class="rps" data-choice="rock"><img src="assets/images/rock.png"></button>
+            </div>
+            <div id="paper">
+                <button class="rps" data-choice="paper"><img src="assets/images/paper.png" alt="paper"></button>
+            </div>
+            <div id="scissors">
+                <button class="rps" data-choice="scissors"><img src="assets/images/scissors.png"
+                        alt="scissors"></button>
+            </div>
+        </div>
     </div>
     <div id="result"></div>
 
-    <div id="message">Choose your hand!!!</div>
-    <div><button id="restart">Play Game</button></div>
+    <div id="message">Choose your hand!!!
+        <div><button id="restart">Play Game</button></div>
+    </div>
 
     <!--JavaScript file path and fontawesome kit-->
     <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/97488dfb41.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

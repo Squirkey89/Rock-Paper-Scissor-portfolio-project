@@ -1,13 +1,15 @@
-
 /*jshint esversion: 6 */
 
 /**Dom Manipulators */
 const buttons = document.getElementsByTagName("button");
+const rps = document.getElementByClassName('rps')
 const compScoreDisplayed = document.getElementById('computer-score');
 const userScoreDisplayed = document.getElementById('user-score');
 const message = document.getElementById('message');
 const results = document.getElementById('result');
-const replay = document.getElementById("restart");
+const startGame = document.getElementById("restart");
+const instruction = document.getElementById("instructions");
+
 
 
 
@@ -49,53 +51,57 @@ function mainGame(userChoice) {
 	if (computerChoice === 'rock' && userChoice === 'scissors') {
 		document.getElementById('message').innerHTML = "You choose scissors. Computer choose rock";
 		computerWin();
-	}
-	else if(computerChoice === userChoice)
-		{document.getElementById('message').innerHTML = "Its a draw!";
+	} else if (computerChoice === userChoice) {
+		document.getElementById('message').innerHTML = "Its a draw!";
 		drawGame();
 	}
-	
+
 }
-function userWin(){
+
+function userWin() {
 	let userScoreDisplayed = parseInt(document.getElementById("user-score").innerText);
-	document.getElementById("user-score").innerText = ++userScoreDisplayed;	
-	document.getElementById("result").innerHTML='You win!';
+	document.getElementById("user-score").innerText = ++userScoreDisplayed;
+	document.getElementById("result").innerHTML = 'You win!';
 	if (userScoreDisplayed == 5) {
-		winGame();}
+		winGame();
+	}
 }
-function computerWin(){
+
+function computerWin() {
 	let compScoreDisplayed = parseInt(document.getElementById("computer-score").innerText);
-	document.getElementById("computer-score").innerText = ++compScoreDisplayed;	
-	document.getElementById("result").innerHTML='You Lose!';
+	document.getElementById("computer-score").innerText = ++compScoreDisplayed;
+	document.getElementById("result").innerHTML = 'You Lose!';
 	if (compScoreDisplayed == 5) {
-		gameOver();}
+		gameOver();
+	}
 
 }
 
-function drawGame(){
-	document.getElementById("result").innerHTML='';
+function drawGame() {
+	document.getElementById("result").innerHTML = '';
 
 }
-function winGame(){
-	document.getElementById("result").innerHTML='Congratulations Youve won the game!';
-	document.getElementById("message").innerHTML='';
-	document.getElementById("computer-score").innerText = 0;
-	document.getElementById("user-score").innerText = 0;}
-	
-function gameOver(){
-	document.getElementById("result").innerHTML='You have lost the game!';
-	document.getElementById("message").innerHTML='';
+
+function winGame() {
+	document.getElementById("result").innerHTML = 'Congratulations Youve won the game!';
 	document.getElementById("computer-score").innerText = 0;
 	document.getElementById("user-score").innerText = 0;
 }
 
-function restart(){
 
-	document.getElementById("computer-score").innerText = 0;
+
+function gameOver() {
+	document.getElementById("result").innerHTML = 'You have lost the game!';
 	document.getElementById("user-score").innerText = 0;
+	document.getElementById("computer-score").innerText = 0;
+}
+
+function beginGame() {
+	instruction.style.display = "none";
+	startGame.style.display = "none";
+	rps.style.display ="flex";
+
 
 }
 
-replay.addEventListener('click', restart);
-
-
+startGame.addEventListener('click', beginGame);
