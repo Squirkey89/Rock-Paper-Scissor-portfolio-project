@@ -28,7 +28,7 @@ header h1 {
     padding-top: 20px;
 }
 
-/* Style the main logo */
+/* Style the images thats are the main buttons of the game*/
 
 ul {
     margin-top: 50px;
@@ -63,21 +63,6 @@ img {
     display: none;
 
 }
-
-#instructions{
-    background-color: #05258f;
-    height:300px ;
-    width: 600px;
-    margin: auto 0px;
-    border: 5px solid white;
-    border-radius: 40px;
-    
-}
-#instructions > ul{
-    list-style-type: none;
-}
-
-
 .rps {
     padding-top: 20px;
     background-color: #05258f;
@@ -95,12 +80,28 @@ img {
     transform: scale(1.1);
 
 }
+/* style instructions box which will appear before the player starts the game*/
+#instructions{
+    background-color: #05258f;
+    height:300px ;
+    width: 600px;
+    margin: auto 0px;
+    border: 5px solid white;
+    border-radius: 40px;  
+}
+#instructions > ul{
+    list-style-type: none;
+}
+
+/* style unordered list at the opening text*/
+
 
 ul {
     list-style-position: inside;
     margin-bottom: 40px;
 }
 
+/* style div contained outside the scores*/
 
 #score-container {
     height: 150px;
@@ -109,6 +110,7 @@ ul {
 
 
 }
+/* style computer and users div */
 
 .computer,
 .user {
@@ -135,9 +137,8 @@ ul {
     margin-right: 400px;
     padding-bottom: 5px;
 
-
-
 }
+/* style result div that appears below the images*/
 #result{
     font-size: 1.6em;
     font-weight: bold; 
@@ -149,7 +150,7 @@ ul {
     margin-bottom: 100px;
     font-size: 1.6em;
 }
-#restart {
+#play-game {
     font-size: 0.9em;
     background-color: #05258f;
     border: 5px solid white;
@@ -162,7 +163,7 @@ ul {
     text-shadow: 3px 3px 0px black;
 
 }
-#restart:hover {
+#play-game:hover {
     cursor: pointer;
     background-color: #5273df;
     transform: scale(1.1);
@@ -232,7 +233,7 @@ ul {
         margin-top: 30px;
     }
 
-    #restart{
+    #play-game{
         font-size: 0.7em;
 
     }
@@ -240,7 +241,7 @@ ul {
 
 }
 
-@media only screen and (max-width: 696px) {
+@media only screen and (max-width: 697px) {
     .computer {
         margin-left: 50px;
         width: 30%;
@@ -257,7 +258,7 @@ ul {
         ;
     }
 
-    #restart{
+    #play-game{
         margin-top: 200px;
     }
 }
@@ -272,7 +273,7 @@ ul {
     img {
         height: 100px;
     }
-    #restart{
+    #play-game{
         margin-top: 200px;
     }
 
@@ -316,7 +317,7 @@ ul {
     .computer {
         margin-left: 40px;
     }
-    #restart{
+    #play-game{
         margin-top: 150px;
         margin-bottom: 200px;
     }

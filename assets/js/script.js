@@ -1,13 +1,13 @@
 /*jshint esversion: 6 */
 
 /**Dom Manipulators */
-const buttons = document.getElementsByTagName("button");
+const buttons = document.getElementsByTagName('button');
 const compScoreDisplayed = document.getElementById('computer-score');
 const userScoreDisplayed = document.getElementById('user-score');
 const message = document.getElementById('message');
 const results = document.getElementById('result');
-const startGame = document.getElementById("restart");
-const instruction = document.getElementById("instructions");
+const startGame = document.getElementById('play-game');
+const instruction = document.getElementById('instructions');
 
 
 document.addEventListener("DOMContentLoaded", function() {
