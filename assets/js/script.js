@@ -10,14 +10,16 @@ const startGame = document.getElementById("restart");
 const instruction = document.getElementById("instructions");
 
 
-
+document.addEventListener("DOMContentLoaded", function() {
 
 for (let button of buttons) {
 	button.addEventListener("click", function () {
 		let userChoice = this.getAttribute("data-choice");
 		mainGame(userChoice);
 	});
-}
+	startGame.addEventListener('click', beginGame);
+
+}});
 
 function generateComputerChoice() {
 	let choices = ['rock', 'paper', 'scissors'];
@@ -96,13 +98,15 @@ function gameOver() {
 }
 
 function beginGame() {
-	let elements = document.getElementsByClassName("rps");
+	let r = document.getElementById('rock');
+	let p = document.getElementById('paper');
+	let s = document.getElementById('scissors');
+
 	instruction.style.display = "none";
 	startGame.style.display = "none";
-	elements.style.display = "flex";
-
+	r.style.display = "flex";
+	p.style.display = "flex";
+	s.style.display = "flex";
 
 
 }
-
-startGame.addEventListener('click', beginGame);
