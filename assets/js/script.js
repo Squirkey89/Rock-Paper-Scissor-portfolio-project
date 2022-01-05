@@ -101,12 +101,11 @@ function beginGame() {
 	let r = document.getElementById('rock');
 	let p = document.getElementById('paper');
 	let s = document.getElementById('scissors');
-
 	instruction.style.display = "none";
 	startGame.style.display = "none";
 	r.style.display = "flex";
 	p.style.display = "flex";
 	s.style.display = "flex";
-
+	document.getElementById('message').innerHTML ="Your move!"
 
 }
