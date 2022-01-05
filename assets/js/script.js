@@ -7,19 +7,20 @@ const userScoreDisplayed = document.getElementById('user-score');
 const message = document.getElementById('message');
 const results = document.getElementById('result');
 const startGame = document.getElementById('play-game');
-const instruction = document.getElementById('instructions');
+const box = document.getElementById('box-area');
 
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
 
-for (let button of buttons) {
-	button.addEventListener("click", function () {
-		let userChoice = this.getAttribute("data-choice");
-		mainGame(userChoice);
-	});
-	startGame.addEventListener('click', beginGame);
+	for (let button of buttons) {
+		button.addEventListener("click", function () {
+			let userChoice = this.getAttribute("data-choice");
+			mainGame(userChoice);
+		});
+		startGame.addEventListener('click', beginGame);
 
-}});
+	}
+});
 
 function generateComputerChoice() {
 	let choices = ['rock', 'paper', 'scissors'];
@@ -101,11 +102,11 @@ function beginGame() {
 	let r = document.getElementById('rock');
 	let p = document.getElementById('paper');
 	let s = document.getElementById('scissors');
-	instruction.style.display = "none";
+	document.getElementById('box-area').style.display = "none";
 	startGame.style.display = "none";
 	r.style.display = "flex";
 	p.style.display = "flex";
 	s.style.display = "flex";
-	document.getElementById('message').innerHTML ="Your move!"
+	document.getElementById('message').innerHTML = "Your move!";
 
 }

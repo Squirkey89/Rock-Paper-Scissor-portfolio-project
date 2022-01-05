@@ -16,11 +16,13 @@ body {
 
 
 }
-#game{    
+
+#game {
     font-size: 0.8em;
     height: 10px;
     margin-top: 100px;
-    background-color: rgb(68, 128, 240);;
+    background-color: rgb(68, 128, 240);
+    ;
 }
 
 header {
@@ -32,6 +34,15 @@ header {
 
 header h1 {
     padding-top: 20px;
+}
+
+section h2{
+    margin-bottom: 0px;
+
+}
+section > ul{
+    margin-top: 0px;
+
 }
 
 /* Style the images thats are the main buttons of the game*/
@@ -47,7 +58,7 @@ ul {
     padding-top: 10px;
     height: 200px;
     justify-content: center;
-    
+
 }
 
 img {
@@ -69,6 +80,7 @@ img {
     display: none;
 
 }
+
 .rps {
     padding-top: 20px;
     background-color: #05258f;
@@ -86,18 +98,25 @@ img {
     transform: scale(1.1);
 
 }
-/* style instructions box which will appear before the player starts the game*/
-#instructions{
+
+/* style box-area box which will appear before the player starts the game*/
+#box-area {
     background-color: #05258f;
-    height:300px ;
+    height: 300px;
     width: 600px;
     margin: auto 0px;
     border: 5px solid white;
-    border-radius: 40px;  
+    border-radius: 40px;
 }
-#instructions > ul{
+
+#box-area >ul {
     list-style-type: none;
 }
+#box-title{
+    margin-top: 20px;
+    margin-bottom: 0px;
+
+} 
 
 /* style unordered list at the opening text*/
 
@@ -115,6 +134,7 @@ ul {
 
 
 }
+
 /* style computer and users div */
 
 .computer,
@@ -143,10 +163,11 @@ ul {
     padding-bottom: 5px;
 
 }
+
 /* style result div that appears below the images*/
-#result{
+#result {
     font-size: 1.6em;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 
@@ -155,6 +176,7 @@ ul {
     margin-bottom: 100px;
     font-size: 1.6em;
 }
+
 #play-game {
     font-size: 0.9em;
     background-color: #05258f;
@@ -168,6 +190,7 @@ ul {
     text-shadow: 3px 3px 0px black;
 
 }
+
 #play-game:hover {
     cursor: pointer;
     background-color: #5273df;
@@ -183,8 +206,9 @@ ul {
     .user {
         margin-right: 400px;
     }
-   
+
 }
+
 @media only screen and (max-width: 1383px) {
     .computer {
         margin-left: 300px;
@@ -238,11 +262,12 @@ ul {
         margin-top: 30px;
     }
 
-    #play-game{
+    #play-game {
         font-size: 0.7em;
 
     }
-    #game{
+
+    #game {
         margin-bottom: 50px;
     }
 
@@ -260,13 +285,13 @@ ul {
         width: 30%;
 
     }
-    #instructions {
+
+    #box-area  {
         width: 400px;
-        height: 400px
-        ;
+        height: 400px;
     }
 
-    #play-game{
+    #play-game {
         margin-top: 200px;
     }
 }
@@ -281,7 +306,8 @@ ul {
     img {
         height: 100px;
     }
-    #play-game{
+
+    #play-game {
         margin-top: 200px;
     }
 
@@ -325,24 +351,27 @@ ul {
     .computer {
         margin-left: 40px;
     }
-    #play-game{
+
+    #play-game {
         margin-top: 150px;
         margin-bottom: 200px;
     }
-    #instructions {
+
+    #box-area  {
         width: 300px;
-        height: 300px
-        ;
+        height: 300px;
     }
-   
+
 }
-@media only screen and (max-width: 338px){
-    .user{
+
+@media only screen and (max-width: 338px) {
+    .user {
         margin-right: 10px;
         width: 120px;
 
     }
-    .computer{
+
+    .computer {
         margin-left: 10px;
         width: 120px;
 
