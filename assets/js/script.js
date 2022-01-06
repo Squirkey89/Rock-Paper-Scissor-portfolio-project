@@ -61,6 +61,10 @@ function userWin() {
 	document.getElementById("result").innerHTML = 'You win!';
 	if (userScoreDisplayed == 5) {
 		winGame();
+	r.style.display = "none";
+	p.style.display = "none";
+	s.style.display = "none";
+
 	}
 }
 
@@ -70,6 +74,8 @@ function computerWin() {
 	document.getElementById("result").innerHTML = 'You Lose!';
 	if (compScoreDisplayed == 5) {
 		gameOver();
+
+
 	}
 
 }
@@ -83,6 +89,7 @@ function winGame() {
 	document.getElementById("result").innerHTML = 'Congratulations Youve won the game!';
 	document.getElementById("computer-score").innerText = 0;
 	document.getElementById("user-score").innerText = 0;
+
 }
 
 
@@ -91,6 +98,7 @@ function gameOver() {
 	document.getElementById("result").innerHTML = 'You have lost the game!';
 	document.getElementById("user-score").innerText = 0;
 	document.getElementById("computer-score").innerText = 0;
+
 }
 
 function beginGame() {
