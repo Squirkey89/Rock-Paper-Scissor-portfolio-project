@@ -317,7 +317,7 @@ ul {
 
 @media only screen and (max-width: 483px) {
     header {
-        height: 150px;
+        height: 100px;
     }
 
     body {
@@ -376,6 +376,8 @@ ul {
     .computer {
         margin-left: 10px;
         width: 120px;
-
+    }
+    header {
+        height: 140px;
     }
 }

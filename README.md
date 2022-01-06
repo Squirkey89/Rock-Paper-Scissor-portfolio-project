@@ -143,7 +143,7 @@ The live link to this website can be found here - https://squirkey89.github.io/R
 
 # Credits<div id='id-credits'>
   * I used Am I Responsive web site for checking responsiveness on all Apple devices screen sizes [am i responsiveness](http://ami.responsivedesign.is/)
-  * When coding the project I referenced the [love maths project](https://github.com/Code-Institute-Org/love-running-2.0)
+  * When coding the project I referenced the [love maths project](hhttps://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode)
   * Code was referenced from Dani Krossing's [YouTube channel](https://www.youtube.com/watch?v=kEf1xSwX5D8) when creating this website's Favicon.
   Here is the code:```link rel="shortcut icon" href="assets/images/android-chrome-192x192.png"```
 
@@ -151,6 +151,11 @@ The live link to this website can be found here - https://squirkey89.github.io/R
 **Media**
   * All the images used in the website were taken from [shutterstock](.https://www.shutterstock.com/).
   * The icon used for the websites favicon was created and downloaded from [Favicon Generator](https://favicon.io/).
+
+# Acknowledgments<div id='id-acknowledgements'>
+   * My mentor for the useful feedback direction and guidance.
+   * The online tutors and the slack community for help and and advice.
+   * Code Institite course material.
 
 
 
