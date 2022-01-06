@@ -129,11 +129,21 @@ ul {
 #lose-box{
     display: none;
 }
-
+#lose-box > p{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1.5em;
+}
 #win-box{
     display: none;
 }
 
+
+#win-box > p{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1.5em;
+}
 /* style unordered list at the opening text*/
 
 
@@ -214,6 +224,7 @@ ul {
 
 }
 #play-again {
+    
 }
 
 /* make website responsive for large screeens*/
