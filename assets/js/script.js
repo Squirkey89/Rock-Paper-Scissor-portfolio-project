@@ -1,6 +1,9 @@
 /**Dom Manipulators */
 const buttons = document.getElementsByTagName('button');
 const startGame = document.getElementById('play-game');
+let r = document.getElementById('rock');
+let p = document.getElementById('paper');
+let s = document.getElementById('scissors');
 
 /**  Add event listener for three buttons and for the play game button */
 document.addEventListener("DOMContentLoaded", function () {
@@ -35,7 +38,7 @@ function mainGame(userChoice) {
 		userWin();
 	}
 	if (computerChoice === 'scissors' && userChoice === 'rock') {
-		document.getElementById('message').innerHTML = "You choose rock👊🏻 Computer choose scissors✌🏻";
+		document.getElementById('message').innerHTML = "You choose rock👊🏻 Computer choose scissors .✌🏻";
 		userWin();
 	}
 	if (computerChoice === 'paper' && userChoice === 'rock') {
@@ -110,9 +113,6 @@ function gameOver() {
 /** This function works when the play game button is clicked.
  *  It removes the box area and play button and the game then appears */
 function beginGame() {
-	let r = document.getElementById('rock');
-	let p = document.getElementById('paper');
-	let s = document.getElementById('scissors');
 	document.getElementById('box-area').style.display = "none";
 	startGame.style.display = "none";
 	r.style.display = "flex";
