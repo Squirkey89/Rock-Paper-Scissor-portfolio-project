@@ -75,23 +75,23 @@ Below the game each time the user and computer make their choice a message will 
 ## Validator Testing<div id='id-validator'>
 
   * Lighthouse
-    *  I tested he website on the Lighthouse testing in the chrome dev tools and the results are shown below.<p>&nbsp;</p>
+    *  I tested he website on the Lighthouse testing in the chrome dev tools and the results are shown below.  
 
     <img src = "assets/images/lighthouse.png">
 
 
   * Html
-    *  There were no errors found when I tested the webpage on the HTML validator.<p>&nbsp;</p>  
+    *  There were no errors found when I tested the webpage on the HTML validator.   
         <img src = "assets/images/htmlvalidator.png">
   
 
   * CSS
-    *  There were no errors found when I tested the webpage on the CSS validator.<p>&nbsp;</p> 
+    *  There were no errors found when I tested the webpage on the CSS validator.  
             <img src = "assets/images/cssval.png">
 
 
   * javaScript
-    *  There were no errors found when I tested the webpage on jshint.<p>&nbsp;</p>  
+    *  There were no errors found when I tested the webpage on jshint.   
             <img src = "assets/images/jshint.png">
 
 ## Bugs<div id='id-bugs'>
@@ -122,7 +122,14 @@ These are the steps used to deploy the website. The site was deployed using GitH
 The live link to this website can be found here - https://squirkey89.github.io/Rock-Paper-Scissor-portfolio-project/
  
 
+## Credits<div id='id-credits'>
+  * I used Am I Responsive web site for checking responsiveness on all Apple devices screen sizes [am i responsiveness](http://ami.responsivedesign.is/)
+  * When coding the project I referenced the [love maths project](https://github.com/Code-Institute-Org/love-running-2.0)
+  * To add favicon I watched a tutorial on Dani Krossings YouTube channel here is the code:```link rel="shortcut icon" href="assets/images/android-chrome-192x192.png"```
 
+
+**Media**
+  * All the images used in the website were taken from [shutterstock](.https://www.shutterstock.com/)
 
 
 
