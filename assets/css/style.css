@@ -200,6 +200,9 @@ ul {
 
 }
 
+/* make website responsive for large screeens*/
+
+
 @media only screen and (max-width: 1848px) {
     .computer {
         margin-left: 400px
@@ -221,6 +224,8 @@ ul {
     }
 
 }
+
+/* make website responsive for medium size screeens*/
 
 @media only screen and (max-width: 1075px) {
     .computer {
@@ -314,6 +319,8 @@ ul {
     }
 
 }
+
+/* make website responsive for small size screeens*/
 
 @media only screen and (max-width: 483px) {
     header {
