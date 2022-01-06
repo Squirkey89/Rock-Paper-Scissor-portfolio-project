@@ -103,7 +103,7 @@ img {
 }
 
 /* style box-area box which will appear before the player starts the game*/
-#box-area {
+.message-box {
     background-color: #05258f;
     height: 300px;
     width: 600px;
@@ -116,14 +116,22 @@ ul {
     margin-top: 30px;
 }
 
-#box-area>ul {
+.box-area>ul {
     list-style-type: none;
 }
 
-#box-title {
+.box-title {
     margin-top: 20px;
     margin-bottom: 0px;
 
+}
+
+#lose-box{
+    display: none;
+}
+
+#win-box{
+    display: none;
 }
 
 /* style unordered list at the opening text*/
@@ -185,7 +193,7 @@ ul {
     font-size: 1.6em;
 }
 
-#play-game {
+.playbtn {
     font-size: 0.9em;
     background-color: #05258f;
     border: 5px solid white;
@@ -199,11 +207,13 @@ ul {
 
 }
 
-#play-game:hover {
+.playbtn:hover {
     cursor: pointer;
     background-color: #5273df;
     transform: scale(1.1);
 
+}
+#play-again {
 }
 
 /* make website responsive for large screeens*/

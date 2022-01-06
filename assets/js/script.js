@@ -4,6 +4,12 @@ const startGame = document.getElementById('play-game');
 let r = document.getElementById('rock');
 let p = document.getElementById('paper');
 let s = document.getElementById('scissors');
+const winBox = document.getElementById('win-box');
+const loseBox = document.getElementById('lose-box');
+const playAgain = document.getElementById('play-again');
+
+
+
 
 /**  Add event listener for three buttons and for the play game button */
 document.addEventListener("DOMContentLoaded", function () {
@@ -14,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			mainGame(userChoice);
 		});
 		startGame.addEventListener('click', beginGame);
+		playAgain.addEventListener('click', replayGame);
 
 	}
 });
@@ -70,6 +77,10 @@ function userWin() {
 		r.style.display = "none";
 		p.style.display = "none";
 		s.style.display = "none";
+		startGame.style.display = "flex";
+		winBox.style.display = "flex";
+		document.getElementById('play-again').style.display = "flex";
+
 
 	}
 }
@@ -82,6 +93,13 @@ function computerWin() {
 	document.getElementById("result").innerHTML = 'You Lose!';
 	if (compScoreDisplayed == 5) {
 		gameOver();
+		r.style.display = "none";
+		p.style.display = "none";
+		s.style.display = "none";
+		startGame.style.display = "flex";
+		loseBox.style.display = "flex";
+		playAgain.style.display = "flex";
+
 
 
 	}
@@ -95,18 +113,18 @@ function drawGame() {
 
 /** This function includes message the user wins and the scores go back to zero */
 function winGame() {
-	document.getElementById("result").innerHTML = 'Congratulations Youve won the game!🏆';
-	document.getElementById("computer-score").innerText = 0;
-	document.getElementById("user-score").innerText = 0;
+	document.getElementById("message").innerHTML = '';
+	document.getElementById("result").innerHTML = '';
+	
 
 }
 
 
 /** This function includes message the user wins and the scores go back to zero */
 function gameOver() {
-	document.getElementById("result").innerHTML = 'You have lost the game!😟';
-	document.getElementById("user-score").innerText = 0;
-	document.getElementById("computer-score").innerText = 0;
+	document.getElementById("message").innerHTML = '';
+	document.getElementById("result").innerHTML = '';
+
 
 }
 
@@ -120,4 +138,9 @@ function beginGame() {
 	s.style.display = "flex";
 	document.getElementById('message').innerHTML = "Your move!";
 
+}
+
+function replayGame(){
+	document.getElementById("computer-score").innerText = 0;
+	document.getElementById("user-score").innerText = 0;
 }
