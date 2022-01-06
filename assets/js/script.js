@@ -2,12 +2,7 @@
 
 /**Dom Manipulators */
 const buttons = document.getElementsByTagName('button');
-const compScoreDisplayed = document.getElementById('computer-score');
-const userScoreDisplayed = document.getElementById('user-score');
-const message = document.getElementById('message');
-const results = document.getElementById('result');
 const startGame = document.getElementById('play-game');
-const box = document.getElementById('box-area');
 
 
 document.addEventListener("DOMContentLoaded", function () {

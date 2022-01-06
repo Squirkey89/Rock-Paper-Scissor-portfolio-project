@@ -36,11 +36,12 @@ header h1 {
     padding-top: 20px;
 }
 
-section h2{
+section h2 {
     margin-bottom: 0px;
 
 }
-section > ul{
+
+section>ul {
     margin-top: 0px;
 
 }
@@ -109,14 +110,15 @@ img {
     border-radius: 40px;
 }
 
-#box-area >ul {
+#box-area>ul {
     list-style-type: none;
 }
-#box-title{
+
+#box-title {
     margin-top: 20px;
     margin-bottom: 0px;
 
-} 
+}
 
 /* style unordered list at the opening text*/
 
@@ -286,7 +288,7 @@ ul {
 
     }
 
-    #box-area  {
+    #box-area {
         width: 400px;
         height: 400px;
     }
@@ -357,7 +359,7 @@ ul {
         margin-bottom: 200px;
     }
 
-    #box-area  {
+    #box-area {
         width: 300px;
         height: 300px;
     }
