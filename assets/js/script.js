@@ -27,27 +27,27 @@ function generateComputerChoice() {
 function mainGame(userChoice) {
 	let computerChoice = generateComputerChoice();
 	if (computerChoice === 'rock' && userChoice === 'paper') {
-		document.getElementById('message').innerHTML = "You choose paper. Computer choose rock";
+		document.getElementById('message').innerHTML = "You choose paper🖐🏻 Computer choose rock👊🏻";
 		userWin();
 	}
 	if (computerChoice === 'paper' && userChoice === 'scissors') {
-		document.getElementById('message').innerHTML = "You choose scissors. Computer choose rock";
+		document.getElementById('message').innerHTML = "You choose scissors✌🏻 Computer choose rock👊🏻";
 		userWin();
 	}
 	if (computerChoice === 'scissors' && userChoice === 'rock') {
-		document.getElementById('message').innerHTML = "You choose rock. Computer choose scissors";
+		document.getElementById('message').innerHTML = "You choose rock👊🏻 Computer choose scissors✌🏻";
 		userWin();
 	}
 	if (computerChoice === 'paper' && userChoice === 'rock') {
-		document.getElementById('message').innerHTML = "You choose rock. Computer choose paper";
+		document.getElementById('message').innerHTML = "You choose rock👊🏻 Computer choose paper🖐🏻";
 		computerWin();
 	}
 	if (computerChoice === 'scissors' && userChoice === 'paper') {
-		document.getElementById('message').innerHTML = "You choose paper. Computer choose scissors";
+		document.getElementById('message').innerHTML = "You choose paper🖐🏻 Computer choose scissors✌🏻";
 		computerWin();
 	}
 	if (computerChoice === 'rock' && userChoice === 'scissors') {
-		document.getElementById('message').innerHTML = "You choose scissors. Computer choose rock";
+		document.getElementById('message').innerHTML = "You choose scissors✌🏻 Computer choose rock👊🏻";
 		computerWin();
 	} else if (computerChoice === userChoice) {
 		document.getElementById('message').innerHTML = "Its a draw!";
@@ -64,9 +64,9 @@ function userWin() {
 	document.getElementById("result").innerHTML = 'You win!';
 	if (userScoreDisplayed == 5) {
 		winGame();
-	r.style.display = "none";
-	p.style.display = "none";
-	s.style.display = "none";
+		r.style.display = "none";
+		p.style.display = "none";
+		s.style.display = "none";
 
 	}
 }
@@ -92,7 +92,7 @@ function drawGame() {
 
 /** This function includes message the user wins and the scores go back to zero */
 function winGame() {
-	document.getElementById("result").innerHTML = 'Congratulations Youve won the game!';
+	document.getElementById("result").innerHTML = 'Congratulations Youve won the game!🏆';
 	document.getElementById("computer-score").innerText = 0;
 	document.getElementById("user-score").innerText = 0;
 
@@ -101,7 +101,7 @@ function winGame() {
 
 /** This function includes message the user wins and the scores go back to zero */
 function gameOver() {
-	document.getElementById("result").innerHTML = 'You have lost the game!';
+	document.getElementById("result").innerHTML = 'You have lost the game!😟';
 	document.getElementById("user-score").innerText = 0;
 	document.getElementById("computer-score").innerText = 0;
 

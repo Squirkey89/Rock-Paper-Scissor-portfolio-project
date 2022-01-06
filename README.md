@@ -63,7 +63,9 @@ Below the game each time the user and computer make their choice a message will 
 <img src ="assets/images/message.png"> 
 
 * ### Features Left to Implement
- I think I would definitely add some animations if I were to return to this website in the future. The game would be won or lost by an animation appearing on the screen, which would appear once the computer or user scored five points.
+ * I think I would definitely add some animations if I were to return to this website in the future. The game would be won or lost by an animation appearing on the screen, which would appear once the computer or user scored five points.
+ * Presently, the user is notified by text of the website's computer selection. I would like to implement a feature that highlights the computers' choice with a colored background, while also communicating the result with the text below.
+
 
 
 # Testing<div id='id-testing'>
@@ -148,9 +150,11 @@ The live link to this website can be found here - https://squirkey89.github.io/R
   Here is the code:```link rel="shortcut icon" href="assets/images/android-chrome-192x192.png"```
 
 
+
 **Media**
   * All the images used in the website were taken from [shutterstock](.https://www.shutterstock.com/).
   * The icon used for the websites favicon was created and downloaded from [Favicon Generator](https://favicon.io/).
+  * The emojis that I used in the game were taken from [getemoji](https://getemoji.com/).
 
 # Acknowledgments<div id='id-acknowledgements'>
    * My mentor for the useful feedback direction and guidance.
