@@ -78,6 +78,7 @@ function userWin() {
 		p.style.display = "none";
 		s.style.display = "none";
 		winBox.style.display = "flex";
+		play.style.display = "flex"
 
 
 
@@ -96,6 +97,8 @@ function computerWin() {
 		p.style.display = "none";
 		s.style.display = "none";
 		loseBox.style.display = "flex";
+		play.style.display = "flex"
+
 
 
 
@@ -149,4 +152,5 @@ document.getElementById("play-again").addEventListener("click", function () {
 	document.getElementById('message').innerHTML = "Your move!";
 	document.getElementById("computer-score").innerText = 0;
 	document.getElementById("user-score").innerText = 0;
+	document.getElementById("play-again").style.display = "none";
 });
