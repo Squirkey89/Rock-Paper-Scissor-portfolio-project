@@ -14,8 +14,6 @@ body {
     text-align: center;
     color: #ffffff;
     text-shadow: 3px 3px 0px black;
-
-
 }
 
 header {
@@ -119,8 +117,11 @@ ul {
     font-size: 1.8rem;
 }
 
-.box-area>ul {
+.box-area, ul {
     list-style-type: none;
+    padding-left: 5px;
+    padding-right: 5px;
+
 }
 
 .box-title {
@@ -248,10 +249,6 @@ ul {
 
     }
 
-    .playbtn{
-       
-    }
-
 /* make website responsive for large screeens*/
 
 
@@ -319,6 +316,7 @@ ul {
 
     #image-container {
         margin-top: 30px;
+        
     }
 
     #play-game {
@@ -353,7 +351,11 @@ ul {
     #play-game {
         margin-top: 200px;
     }
+    #box-title, li{
+        font-size: 1.3m;
+    }
 }
+
 
 @media only screen and (max-width: 571px) {
 
@@ -446,10 +448,12 @@ ul {
     #result{
         margin-top: -20px;
     }
-
+    #box-title > li{
+        
+    }
 }
 
-@media only screen and (max-width: 338px) {
+@media only screen and (max-width: 346px) {
     .user {
         margin-right: 10px;
         width: 120px;
