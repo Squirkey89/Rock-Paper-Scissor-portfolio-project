@@ -1,4 +1,6 @@
 /*jshint esversion: 6 */ 
+
+/*jshint esversion: 6 */
 /**Dom Manipulators */
 const buttons = document.getElementsByTagName('button');
 const startGame = document.getElementById('play-game');
@@ -78,7 +80,7 @@ function userWin() {
 		p.style.display = "none";
 		s.style.display = "none";
 		winBox.style.display = "flex";
-		play.style.display = "flex"
+		play.style.display = "flex";
 
 
 
@@ -97,7 +99,7 @@ function computerWin() {
 		p.style.display = "none";
 		s.style.display = "none";
 		loseBox.style.display = "flex";
-		play.style.display = "flex"
+		play.style.display = "flex";
 
 
 
@@ -117,7 +119,7 @@ function winGame() {
 	document.getElementById("result").innerHTML = '';
 	document.getElementById("message").innerHTML = '';
 
-	
+
 
 }
 
@@ -142,10 +144,11 @@ function beginGame() {
 	document.getElementById('message').innerHTML = "Your move!";
 }
 
-
-document.getElementById("play-again").addEventListener("click", function () { 
-	document.getElementById('win-box').style.display ="none";
-	document.getElementById('lose-box').style.display ="none";
+/** This function works to restart the game.
+ *  Once the restart game button is clicked this will reset score annd bring game back up*/
+document.getElementById("play-again").addEventListener("click", function () {
+	document.getElementById('win-box').style.display = "none";
+	document.getElementById('lose-box').style.display = "none";
 	r.style.display = "flex";
 	p.style.display = "flex";
 	s.style.display = "flex";
