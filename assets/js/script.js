@@ -45,7 +45,7 @@ function mainGame(userChoice) {
 		userWin();
 	}
 	if (computerChoice === 'scissors' && userChoice === 'rock') {
-		document.getElementById('message').innerHTML = "You choose rock👊🏻 Computer choose scissors .✌🏻";
+		document.getElementById('message').innerHTML = "You choose rock👊🏻 Computer choose scissors✌🏻";
 		userWin();
 	}
 	if (computerChoice === 'paper' && userChoice === 'rock') {

@@ -222,8 +222,7 @@ ul {
     color: #ffffff;;
     margin-top: 100px;
     text-shadow: 3px 3px 0px black;
-    z-index: 1;
-
+    margin-bottom: 200px;
 }
 
 .playbtn:hover {
@@ -414,14 +413,30 @@ ul {
         margin-left: 40px;
     }
 
+    .message-box {
+        width: 400px;
+        height: 250px;
+    }
+
+
     #play-game {
-        margin-top: 150px;
+        margin-top: 250px;
         margin-bottom: 200px;
+    
+    }
+
+    #play-again{
+        height: 90px;
+        width: 130px;
     }
 
     #box-area {
         width: 300px;
-        height: 300px;
+        height: 400px;
+    }
+
+    #result{
+        margin-top: -20px;
     }
 
 }
