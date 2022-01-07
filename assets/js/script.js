@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */ 
 /**Dom Manipulators */
 const buttons = document.getElementsByTagName('button');
 const startGame = document.getElementById('play-game');
@@ -6,7 +7,7 @@ let p = document.getElementById('paper');
 let s = document.getElementById('scissors');
 const winBox = document.getElementById('win-box');
 const loseBox = document.getElementById('lose-box');
-const playAgain = document.getElementById('play-again');
+const play = document.getElementById('play-again');
 
 
 
@@ -20,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
 			mainGame(userChoice);
 		});
 		startGame.addEventListener('click', beginGame);
-		playAgain.addEventListener('click', replayGame);
 
 	}
 });
@@ -77,9 +77,8 @@ function userWin() {
 		r.style.display = "none";
 		p.style.display = "none";
 		s.style.display = "none";
-		startGame.style.display = "flex";
 		winBox.style.display = "flex";
-		document.getElementById('play-again').style.display = "flex";
+
 
 
 	}
@@ -96,9 +95,7 @@ function computerWin() {
 		r.style.display = "none";
 		p.style.display = "none";
 		s.style.display = "none";
-		startGame.style.display = "flex";
 		loseBox.style.display = "flex";
-		playAgain.style.display = "flex";
 
 
 
@@ -109,12 +106,14 @@ function computerWin() {
 function drawGame() {
 	document.getElementById("result").innerHTML = '';
 
+
 }
 
 /** This function includes message the user wins and the scores go back to zero */
 function winGame() {
-	document.getElementById("message").innerHTML = '';
 	document.getElementById("result").innerHTML = '';
+	document.getElementById("message").innerHTML = '';
+
 	
 
 }
@@ -122,8 +121,9 @@ function winGame() {
 
 /** This function includes message the user wins and the scores go back to zero */
 function gameOver() {
-	document.getElementById("message").innerHTML = '';
 	document.getElementById("result").innerHTML = '';
+	document.getElementById("message").innerHTML = '';
+
 
 
 }
@@ -137,10 +137,16 @@ function beginGame() {
 	p.style.display = "flex";
 	s.style.display = "flex";
 	document.getElementById('message').innerHTML = "Your move!";
-
 }
 
-function replayGame(){
+
+document.getElementById("play-again").addEventListener("click", function () { 
+	document.getElementById('win-box').style.display ="none";
+	document.getElementById('lose-box').style.display ="none";
+	r.style.display = "flex";
+	p.style.display = "flex";
+	s.style.display = "flex";
+	document.getElementById('message').innerHTML = "Your move!";
 	document.getElementById("computer-score").innerText = 0;
 	document.getElementById("user-score").innerText = 0;
-}
+});
