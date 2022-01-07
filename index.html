@@ -34,36 +34,39 @@
             </li>
         </ul>
     </section>
-    <div id="game">
-        <h1>The Game</h1>
-    </div>
-    <div id="score-container">
-        <!-- Computer and user Choice and score-->
-        <div class=computer>
-            <h2>Computer: <span id="computer-score">0</span></h2>
+    <section>
+        <div id="game">
+            <h1>The Game</h1>
+        </div>
+        <div id="score-container">
+            <!-- Computer and user Choice and score-->
+            <div class=computer>
+                <h2>Computer: <span id="computer-score">0</span></h2>
 
+            </div>
+            <div class=user>
+                <h2>User: <span id="user-score">0</span></h2>
+            </div>
         </div>
-        <div class=user>
-            <h2>User: <span id="user-score">0</span></h2>
-        </div>
-    </div>
-    <div id="image-container">
-        <div class="message-box" id="box-area">
-            <h2 id="box-title">Rock, Paper, Scissors</h2>
-            <ul>
-                <li>You choose first and then the computer will make a choice.</li>
-                <li>The first to score five wins the game.</li>
-                <li>Best of Luck</li>
-            </ul>
-        </div>
-        <div class="message-box" id="win-box">
-            <p>Congratulations, Youve won the game!🏆</p>
-            <p id=win-text></p>
-        </div>
-        <div class="message-box" id="lose-box">
-            <p>Hard luck, You lost the game😞</p>
-            <p id=lose-text></p>
-        </div>
+    </section>
+    <section>
+        <div id="image-container">
+            <div class="message-box" id="box-area">
+                <h2 id="box-title">Rock, Paper, Scissors</h2>
+                <ul>
+                    <li>You choose first and then the computer will make a choice.</li>
+                    <li>The first to score five wins the game.</li>
+                    <li>Best of Luck</li>
+                </ul>
+            </div>
+            <div class="message-box" id="win-box">
+                <p>Congratulations, Youve won the game!🏆</p>
+                <p id=win-text></p>
+            </div>
+            <div class="message-box" id="lose-box">
+                <p>Hard luck, You lost the game😞</p>
+                <p id=lose-text></p>
+            </div>
         <div id="rock">
             <button class="rps" data-choice="rock"><img src="assets/images/rock.png" alt="rock"></button>
         </div>
@@ -73,14 +76,16 @@
         <div id="scissors">
             <button class="rps" data-choice="scissors"><img src="assets/images/scissors.png" alt="scissors"></button>
         </div>
-    </div>
-    <div id="result"></div>
+        </div>
+    </section>
+    <section>
+        <div id="result"></div>
 
-    <div id="message">
-        <div><button id="play-game">Play Game</button></div>
-    </div>
-    <div><button id="play-again">Restart Game</button></div>
-
+        <div id="message">
+            <div><button id="play-game">Play Game</button></div>
+        </div>
+        <div><button id="play-again">Restart Game</button></div>
+    </section>
     <!--JavaScript file path and fontawesome kit-->
     <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/97488dfb41.js" crossorigin="anonymous"></script>
