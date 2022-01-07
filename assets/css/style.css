@@ -185,12 +185,10 @@ ul {
     font-size: 0.9em;
     background-color: #05258f;
     width: 20%;
-    justify-content: center;
-    align-items: center;
     border-radius: 40px;
     margin-top: 100px;
     border: 5px solid #ffffff;
-    ;
+    height: 50px;
 
 
 }
@@ -198,13 +196,16 @@ ul {
 .computer {
     float: left;
     margin-left: 400px;
-    padding-bottom: 5px;
+    padding-top:20px;
+
 }
 
 .user {
     float: right;
     margin-right: 400px;
     padding-bottom: 5px;
+    padding-top:20px;
+
 
 }
 
@@ -225,13 +226,10 @@ ul {
     font-size: 0.9em;
     background-color: #05258f;
     border: 5px solid #ffffff;
-    ;
-    font-family: 'Pacifico', 'cursive';
     height: 80px;
     width: 190px;
     border-radius: 40px;
     color: #ffffff;
-    ;
     margin-top: 100px;
     text-shadow: 3px 3px 0px black;
     margin-bottom: 200px;
@@ -359,7 +357,7 @@ ul {
     .computer,
     .user {
 
-        font-size: 0.7em;
+        width: 175px;
         margin-top: 40px;
 
     }
@@ -394,12 +392,10 @@ ul {
 @media only screen and (max-width: 697px) {
     .computer {
         margin-left: 50px;
-        width: 30%;
     }
 
     .user {
         margin-right: 50px;
-        width: 30%;
 
     }
 
@@ -429,6 +425,9 @@ ul {
     #play-game {
         margin-top: 200px;
     }
+    .computer, .score{
+        font-size: 0.8em;
+    }
 
 }
 
@@ -437,10 +436,12 @@ ul {
 @media only screen and (max-width: 483px) {
     header {
         height: 100px;
+        font-size: 1.em;
+
     }
 
     body {
-        font-size: 1.1em;
+        font-size: 1.em;
     }
 
     #rock {
@@ -467,10 +468,16 @@ ul {
 
     .user {
         margin-right: 40px;
+        height:40px;
+        font-size: 1em;
+
     }
 
     .computer {
         margin-left: 40px;
+        height:40px;
+        font-size: 1em;
+
     }
 
     .message-box {
