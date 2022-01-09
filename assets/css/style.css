@@ -428,6 +428,15 @@ ul {
     .computer, .score{
         font-size: 0.8em;
     }
+    .computer{
+        margin-left: 50px;
+
+    }
+    .score{
+        margin-right: 50px;
+
+
+    }
 
 }
 
@@ -469,14 +478,21 @@ ul {
     .user {
         margin-right: 40px;
         height:40px;
-        font-size: 1em;
+        margin: 0;
+        width: 150px;
+        font-size: .6em;
+
 
     }
 
     .computer {
         margin-left: 40px;
         height:40px;
-        font-size: 1em;
+        margin: 0;
+        width: 150px;
+        font-size: .6em;
+
+
 
     }
 
@@ -498,7 +514,7 @@ ul {
     }
 
     #box-area {
-        width: 300px;
+        width: 320px;
         height: 400px;
     }
 
@@ -509,6 +525,7 @@ ul {
 
     #lose-box {
         width: 300px;
+        margin-top: 0;
 
     }
 
