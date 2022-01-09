@@ -36,7 +36,7 @@
     </section>
     <section>
         <div id="game">
-            <h1>The Game</h1>
+            <h2>The Game</h2>
         </div>
         <div id="score-container">
             <!-- Computer and user Choice and score-->
@@ -50,43 +50,48 @@
         </div>
     </section>
     <section>
+        <!--Message box that greets the user-->
         <div id="image-container">
             <div class="message-box" id="box-area">
                 <h2 id="box-title">Rock, Paper, Scissors</h2>
                 <ul>
-                    <li>You choose first and then the computer will make a choice.</li><br>
-                    <li>The first to score five wins the game.</li><br>
+                    <li id ="open-message" >You choose first and then the computer will make a choice.</li>
+                    <li>The first to score five wins the game.</li>
                     <li>Best of Luck</li>
                 </ul>
             </div>
+            <!--Message box if the user wins the game-->
             <div class="message-box" id="win-box">
                 <p>Congratulations, You've won the game!🏆</p>
                 <p id=win-text></p>
             </div>
+            <!--Message box if the user loses the game-->
             <div class="message-box" id="lose-box">
                 <p>Hard luck, You lost the game😞</p>
                 <p id=lose-text></p>
             </div>
+            <!--The game buttons that are used to play the game-->
         <div id="rock">
-            <button class="rps" data-choice="rock"><img src="assets/images/rock.png" alt="rock"></button>
+            <button aria-label="rock" class="rps" data-choice="rock"><img src="assets/images/rock.png" alt="rock"></button>
         </div>
         <div id="paper">
-            <button class="rps" data-choice="paper"><img src="assets/images/paper.png" alt="paper"></button>
+            <button aria-label="paper" class="rps" data-choice="paper"><img src="assets/images/paper.png" alt="paper"></button>
         </div>
         <div id="scissors">
-            <button class="rps" data-choice="scissors"><img src="assets/images/scissors.png" alt="scissors"></button>
+            <button aria-label="scissors" class="rps" data-choice="scissors"><img src="assets/images/scissors.png" alt="scissors"></button>
         </div>
         </div>
-    </section>
-    <section>
+    <!--The result that appears below the game-->
         <div id="result"></div>
-
+        <!--The message that tells the user what the computer picked-->
         <div id="message"></div>
             <div id ="btn-container">
-                <div><button id="play-game">Play Game</button></div>
+            <!--This is the button to play the game-->
+                <div><button aria-label="Play game" id="play-game">Play Game</button></div>
             </div>
+            <!--This is the button to restart the game-->
             <div id ="restart-container">
-            <div><button id="play-again">Restart Game</button></div></div>
+            <div><button aria-label="Restart game" id="play-again">Restart Game</button></div></div>
     </section>
     <!--JavaScript file path and fontawesome kit-->
     <script src="assets/js/script.js"></script>

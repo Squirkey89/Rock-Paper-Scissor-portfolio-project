@@ -35,10 +35,6 @@ section h2 {
 
 }
 
-section>ul {
-    margin-top: px;
-
-}
 
 /* Style the images thats are the main buttons of the game*/
 
@@ -88,6 +84,10 @@ img {
 #box-area {
     width: 600px;
     height: 425px;
+}
+
+#box-area > ul{
+    margin-top: 50px;
 }
 
 .rps {
@@ -511,10 +511,6 @@ ul {
 
     }
 
-    body {
-        font-size: 1.em;
-    }
-
     #rock {
         margin-right: 0;
     }
@@ -593,9 +589,8 @@ ul {
         margin-top: -20px;
     }
 
-    .box-area,
-    ul {
-        font-size: 1em;
+    #open-message{
+        margin-top: -30px;
     }
 
     #win-box>p {
