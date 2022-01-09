@@ -1,6 +1,3 @@
-/*jshint esversion: 6 */ 
-
-/*jshint esversion: 6 */
 /**Dom Manipulators */
 const buttons = document.getElementsByTagName('button');
 const startGame = document.getElementById('play-game');
