@@ -43,7 +43,6 @@ section>ul {
 /* Style the images thats are the main buttons of the game*/
 
 #game {
-    font-size: 0.8em;
     height: 10px;
     margin-top: 100px;
     background-color: rgb(68, 128, 240);
@@ -453,6 +452,10 @@ ul {
 
 
     }
+     #game {
+        margin-top: 60px;
+        
+    }
 
 }
 
@@ -544,6 +547,10 @@ ul {
         margin-top: 0;
 
     }
+    #lose-box > p {
+        margin-top: 30px;
+
+    }
 
     #result {
         margin-top: -20px;
@@ -576,4 +583,5 @@ ul {
         height: 180px;
 
     }
+   
 }
