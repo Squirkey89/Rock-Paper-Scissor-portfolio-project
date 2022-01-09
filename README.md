@@ -114,7 +114,7 @@ The user is presented with a message once they have won or lost. Below the text 
   * Lighthouse
     *  I tested he website on the Lighthouse testing in the chrome dev tools and the results are shown below.  
 
-    <img src = "assets/images/lighthouse.png">
+    <img src = "assets/images/lh.png">
 
 
   * Html
@@ -129,7 +129,7 @@ The user is presented with a message once they have won or lost. Below the text 
 
   * javaScript
     *  There were no errors found when I tested the webpage on jshint.   
-            <img src = "assets/images/jshint.png">
+            <img src = "assets/images/jshint1.png">
 
 # Bugs<div id='id-bugs'>
    * There was only one problem I encountered while developing this website, and it was not an issue with the website itself. When I first tried to use jshint, I was getting a lot of errors which read "'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)." I had no idea what they were about. I Googled it and was unable to find an answer.
