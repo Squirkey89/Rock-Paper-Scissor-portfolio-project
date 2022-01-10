@@ -1,4 +1,4 @@
-/**Dom Manipulators */
+//**Dom Manipulators */
 const buttons = document.getElementsByTagName('button');
 const startGame = document.getElementById('play-game');
 let r = document.getElementById('rock');
@@ -13,7 +13,7 @@ const play = document.getElementById('play-again');
 
 /**  Add event listener for three buttons and for the play game button */
 document.addEventListener("DOMContentLoaded", function () {
-
+                             
 	for (let button of buttons) {
 		button.addEventListener("click", function () {
 			let userChoice = this.getAttribute("data-choice");

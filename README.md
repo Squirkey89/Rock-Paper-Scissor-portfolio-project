@@ -44,11 +44,11 @@ When the user opens the webpage, the website logo is the first image that will c
 <img src= "assets/images/rps1.png"> 
 
 * ## Instructions
-The instructions of the game are shown in a few bullet points below the header. This is useful in explaining how the game works if the user is unfamiliar with the game. It also indicates where the game is located within the website. For the body of the project I choose a background colour of rgb(68, 128, 240). I think the header and body colors go well together and complement each other.<p>&nbsp;</p>
+The instructions of the game are shown the header. This is useful in explaining how the game works if the user is unfamiliar with the game. It also indicates where the game is located within the website. For the body of the project I choose a background colour of rgb(68, 128, 240). I think the header and body colors go well together and complement each other.<p>&nbsp;</p>
 <img src = "assets/images/instruct.png">
 
 * ## Scores
-This area is where the computer and users scores are displayed. To win the game it is the first to five and once the number reaches five the display will revert back to zero and the user can start a new game. This is useful to users as it keeps score of the game.<p>&nbsp;</p>
+This area is where the computer and users scores are displayed. To win the game it is the first to five and once the number reaches the game will wnd and once the user hits the restart button the game display will revert back to zero and the user can start a new game. This is useful feature to users as it keeps score of the game.<p>&nbsp;</p>
 <img src = "assets/images/scores.png">
 
 * ## Game area
@@ -62,7 +62,7 @@ The game is where the user gets to challenge the computer. THere are three hands
 <img src="assets/images/game.png"> 
 
 * ## Result
-Below the game each time the user and computer make their choice a message will be displayed with the result. THe message will tell the user what the computer pick and what the user picked. THe result will tell the user who won that round. After five rounds the result will change to a message either telling the user they have won or that they have  lost.<p>&nbsp;</p>
+Each time the user and computer make a choice, a message will appear below the game. The message will let the user know what hand the computer picked and whether their choice would win or lose. The result below will indicate who won that round. When five rounds have passed, the user will either be notified that they have won or that they have lost the game.<p>&nbsp;</p>
 <img src ="assets/images/result.png"> 
 
 * ## Win box
@@ -74,7 +74,7 @@ When the computer wins the users are notified by a box with text on it informing
 <img src ="assets/images/lose-msg.png">
 
 * ## Restart button
-The user is presented with a message once they have won or lost. Below the text box, there is a button that allows the user to play again. The user's game is restarted after the images and score are reset.<p>&nbsp;</p>
+The user is presented with a message once they have won or lost. Below the text box, there is a button that allows the user to play again. The user's game is restarted once the button is clicked and the images and score are reset.<p>&nbsp;</p>
  <img src ="assets/images/restart-btn.png">
 
 
@@ -152,7 +152,6 @@ The user is presented with a message once they have won or lost. Below the text 
 # Deployment<div id='id-deploy'>
 
 
-These are the steps used to deploy the website. The site was deployed using GitHub.
 * Create the repository for the website you wish to publish.
 * The next step is to push code.
 * Then go to the settings.
@@ -166,7 +165,7 @@ The live link to this website can be found here - https://squirkey89.github.io/R
 # Credits<div id='id-credits'>
   * I used Am I Responsive web site for checking responsiveness on all Apple devices screen sizes [am i responsiveness](http://ami.responsivedesign.is/)
   * When coding the project I referenced the [love maths project](hhttps://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode) The code referenced ```let userScoreDisplayed = parseInt(document.getElementById("user-score").innerText);
-	document.getElementById("user-score").innerText = ++userScoreDisplayed;```
+	document.getElementById("user-score").innerText = ++userScoreDisplayed;
   * Code was referenced from Dani Krossing's [YouTube channel](https://www.youtube.com/watch?v=kEf1xSwX5D8) when creating this website's Favicon.
   Here is the code:```link rel="shortcut icon" href="assets/images/android-chrome-192x192.png"```
   * I also referenced code from whatsdev [YouTube channel](https://www.youtube.com/watch?v=Qqy8Ov3NWvQ) The code referenced is ```function generateComputerChoice() {
