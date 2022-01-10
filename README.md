@@ -173,8 +173,7 @@ The live link to this website can be found here - https://squirkey89.github.io/R
 
 # Credits<div id='id-credits'>
   * I used Am I Responsive web site for checking responsiveness on all Apple devices screen sizes [am i responsiveness](http://ami.responsivedesign.is/)
-  * When coding the project I referenced the [love maths project](hhttps://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode) The code referenced ```let userScoreDisplayed = parseInt(document.getElementById("user-score").innerText);```
-	document.getElementById("user-score").innerText = ++userScoreDisplayed;
+  * When coding the project I referenced the [love maths project](hhttps://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode) The code referenced ```let userScoreDisplayed = parseInt(document.getElementById("user-score").innerText); document.getElementById("user-score").innerText = ++userScoreDisplayed;```
   * Code was referenced from Dani Krossing's [YouTube channel](https://www.youtube.com/watch?v=kEf1xSwX5D8) when creating this website's Favicon.
   Here is the code:```link rel="shortcut icon" href="assets/images/android-chrome-192x192.png"```
   * I also referenced code from whatsdev [YouTube channel](https://www.youtube.com/watch?v=Qqy8Ov3NWvQ) The code referenced is ```function generateComputerChoice() {
