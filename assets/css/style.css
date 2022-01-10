@@ -86,7 +86,7 @@ img {
     height: 425px;
 }
 
-#box-area > ul{
+#box-area>ul {
     margin-top: 50px;
 }
 
@@ -134,6 +134,8 @@ li {
 
 }
 
+/* the box which will appear if player loses the game*/
+
 #lose-box {
     display: none;
     margin-bottom: 50px;
@@ -148,6 +150,7 @@ li {
     font-size: 1.5em;
 }
 
+/* the box which will appear if player wins the game*/
 #win-box {
     display: none;
     margin-bottom: 50px;
@@ -226,6 +229,7 @@ ul {
 
 }
 
+/* the play game button is styled below*/
 #play-game {
     background-color: #05258f;
     border: 5px solid #ffffff;
@@ -240,6 +244,7 @@ ul {
 
 }
 
+/* the play again button is styled below*/
 #restart-container {
     height: 350px;
     width: 200px;
@@ -253,7 +258,7 @@ ul {
     cursor: pointer;
     background-color: #5273df;
     transform: scale(1.1);
-    padding-bottom:  5px;
+    padding-bottom: 5px;
 }
 
 #play-again {
@@ -426,6 +431,7 @@ ul {
     #play-game {
         margin-top: 20px;
     }
+
     #play-again {
         margin-top: 10px;
 
@@ -593,7 +599,7 @@ ul {
         margin-top: -20px;
     }
 
-    #open-message{
+    #open-message {
         margin-top: -30px;
     }
 

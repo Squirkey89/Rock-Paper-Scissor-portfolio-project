@@ -6,6 +6,15 @@ The rock paper scissor game goes back a long way. Everyone is familiar with it f
 # Table of Contents
 1. [Ux](#id-ux)
 2. [Features](#id-features)
+    * [Header](#id-header)
+    * [Instructions](#id-instructions)
+    * [Scores](#id-scores)
+    * [Game area](#id-game-area)
+    * [Game](#id-game)
+    * [Result](#id-result)
+    * [Win box](#id-win)
+    * [Lose box](#id-lose)
+    * [Restart button](#id-restart)
 3. [Testing](#id-testing) 
 4. [Validator Testing](#id-validator)
 5. [Bugs](#id-bugs)
@@ -39,41 +48,41 @@ The rock paper scissor game goes back a long way. Everyone is familiar with it f
 
 
 # Features<div id='id-features'>
-* ## The Header
+* ## The Header<div id='id-header'>
 When the user opens the webpage, the website logo is the first image that will catch their attention. It is large and stands out as it identifies the game to them immediately. As they will immediately know what it is that they are going to play once they open the webpage. When creating the logo I thought about the color scheme and decided on white for the text and I used rgb(68, 128, 240) for the background. I feel that this make the logo stand out.<p>&nbsp;</p>   
 <img src= "assets/images/rps1.png"> 
 
-* ## Instructions
+* ## Instructions<div id='id-instructions'>
 The instructions of the game are shown the header. This is useful in explaining how the game works if the user is unfamiliar with the game. It also indicates where the game is located within the website. For the body of the project I choose a background colour of rgb(68, 128, 240). I think the header and body colors go well together and complement each other.<p>&nbsp;</p>
 <img src = "assets/images/instruct.png">
 
-* ## Scores
+* ## Scores<div id='id-scores'>
 This area is where the computer and users scores are displayed. To win the game it is the first to five and once the number reaches the game will wnd and once the user hits the restart button the game display will revert back to zero and the user can start a new game. This is useful feature to users as it keeps score of the game.<p>&nbsp;</p>
 <img src = "assets/images/scores.png">
 
-* ## Game area
+* ## Game area<div id='game-area'>
 The game area is the main part of the website as it is where the game takes place. There is a game box with a play game button beneath. This tells the user that they must first make a choice and the computer will then make their choice. It also explains that the first to reach a score of five wins the game. Once the user clicks the play game button both the game box and the play game button will dissappear and the game will begin.<p>&nbsp;</p>
 <img src="assets/images/open-msg.png">
 <img src="assets/images/play-btn.png">
 
 
-* ## Game 
+* ## Game<div id='id-game'> 
 The game is where the user gets to challenge the computer. THere are three hands rock paper and scissors. The user must choose one and then the computer will then make their choice which is completely at random. There are messages below to deliver the result to the user also while there score subsequently increase.<p>&nbsp;</p>
 <img src="assets/images/game.png"> 
 
-* ## Result
+* ## Result<div id='id-result'>
 Each time the user and computer make a choice, a message will appear below the game. The message will let the user know what hand the computer picked and whether their choice would win or lose. The result below will indicate who won that round. When five rounds have passed, the user will either be notified that they have won or that they have lost the game.<p>&nbsp;</p>
 <img src ="assets/images/result.png"> 
 
-* ## Win box
+* ## Win box<div id='id-win'>
 Users who defeat the computer are notified so by a box with text on it confirming that they have won. This is when the game is over after five rounds and the user can replay the game again. This is beneficial to the user, as they will be informed that the game has been won and the game will not continue after the win. The user can restart the game.<p>&nbsp;</p>
 <img src ="assets/images/win-msg.png">
 
-* ## Lose box
+* ## Lose box<div id='id-lose'>
 When the computer wins the users are notified by a box with text on it informing them that they have lost. This is when the game is over after five rounds and the user can replay the game again. This is beneficial to the user, as they will be informed that the game has been lost and the game will not continue. The user can restart the game.<p>&nbsp;</p>
 <img src ="assets/images/lose-msg.png">
 
-* ## Restart button
+* ## Restart button<div id='id-restart'>
 The user is presented with a message once they have won or lost. Below the text box, there is a button that allows the user to play again. The user's game is restarted once the button is clicked and the images and score are reset.<p>&nbsp;</p>
  <img src ="assets/images/restart-btn.png">
 
@@ -164,7 +173,7 @@ The live link to this website can be found here - https://squirkey89.github.io/R
 
 # Credits<div id='id-credits'>
   * I used Am I Responsive web site for checking responsiveness on all Apple devices screen sizes [am i responsiveness](http://ami.responsivedesign.is/)
-  * When coding the project I referenced the [love maths project](hhttps://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode) The code referenced ```let userScoreDisplayed = parseInt(document.getElementById("user-score").innerText);
+  * When coding the project I referenced the [love maths project](hhttps://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode) The code referenced ```let userScoreDisplayed = parseInt(document.getElementById("user-score").innerText);```
 	document.getElementById("user-score").innerText = ++userScoreDisplayed;
   * Code was referenced from Dani Krossing's [YouTube channel](https://www.youtube.com/watch?v=kEf1xSwX5D8) when creating this website's Favicon.
   Here is the code:```link rel="shortcut icon" href="assets/images/android-chrome-192x192.png"```

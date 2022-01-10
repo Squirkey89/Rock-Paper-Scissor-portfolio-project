@@ -13,7 +13,7 @@ const play = document.getElementById('play-again');
 
 /**  Add event listener for three buttons and for the play game button */
 document.addEventListener("DOMContentLoaded", function () {
-                             
+
 	for (let button of buttons) {
 		button.addEventListener("click", function () {
 			let userChoice = this.getAttribute("data-choice");
@@ -65,7 +65,7 @@ function mainGame(userChoice) {
 
 }
 /** This increments te score by one for the user.
- *  Also if the game reaches 5 score goes back to zero
+ *  Also if the game restart button is clicked the score will revert to zero.
  */
 function userWin() {
 	let userScoreDisplayed = parseInt(document.getElementById("user-score").innerText);
@@ -84,7 +84,7 @@ function userWin() {
 	}
 }
 /** This increments te score by one for the computer.
- *  Also if the game reaches 5 score goes back to zero
+ *  Also if the game restart button is clicked the score will revert to zero.
  */
 function computerWin() {
 	let compScoreDisplayed = parseInt(document.getElementById("computer-score").innerText);
@@ -111,7 +111,7 @@ function drawGame() {
 
 }
 
-/** This function includes message the user wins and the scores go back to zero */
+/** This function includes the message the user will get if they win */
 function winGame() {
 	document.getElementById("result").innerHTML = '';
 	document.getElementById("message").innerHTML = '';
@@ -121,7 +121,7 @@ function winGame() {
 }
 
 
-/** This function includes message the user wins and the scores go back to zero */
+/** This function includes the message the user will get if they lose */
 function gameOver() {
 	document.getElementById("result").innerHTML = '';
 	document.getElementById("message").innerHTML = '';
