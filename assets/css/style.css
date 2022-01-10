@@ -251,6 +251,7 @@ ul {
     cursor: pointer;
     background-color: #5273df;
     transform: scale(1.1);
+    padding-bottom:  5px;
 }
 
 #play-again {
