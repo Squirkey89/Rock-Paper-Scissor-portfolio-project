@@ -245,6 +245,8 @@ ul {
     width: 200px;
     margin: auto;
     margin-top: -150px;
+    padding-bottom: 5px;
+
 }
 
 #play-game:hover {
@@ -268,7 +270,7 @@ ul {
     padding-bottom: 10px;
     text-shadow: 3px 3px 0px black;
     font-family: 'Lora', sans-serif;
-
+    padding-bottom: 80px;
 }
 
 #play-again:hover {
