@@ -1,6 +1,6 @@
 # Rock Paper Scissors
 
-The rock paper scissor game goes back a long way. Everyone is familiar with it from every corner of the world. The goal of the webpage was to create this game using javaScript and make it an interactive and fun experience for everyone. Upon selection of one of the three available buttons, users will be able to interact with the computer by picking either the rock, paper, or scissors option. Despite its classic format, it can only be played by a single player while traditionally two players are required. As the game can be played alone, it is designed to appeal to a broad audience.
+The rock paper scissor game goes back a long way. Everyone is familiar with it from every corner of the world. The goal of the webpage was to create this game using javaScript and make it an interactive and fun experience for everyone. Upon selection of one of the three available buttons, users will be able to interact with the computer by picking either the rock, paper, or scissors option. Despite its classic format, it can only be played by a single player while traditionally two players are required. As the game can be played alone, it is designed to appeal to a broad audience.<p>&nbsp;</p>
 <img src= "assets/images/amiresponse.png">
 
 # Table of Contents
@@ -9,10 +9,11 @@ The rock paper scissor game goes back a long way. Everyone is familiar with it f
 3. [Testing](#id-testing) 
 4. [Validator Testing](#id-validator)
 5. [Bugs](#id-bugs)
-6. [Technologies used](#id-tech)
-7. [Deployment](#id-deploy)
-8. [Credits](#id-credits)
-9. [Acknowledgements](#id-acknowledgements)
+6. [Unfixed Bugs](#id-bugs)
+7. [Technologies used](#id-tech)
+8. [Deployment](#id-deploy)
+9. [Credits](#id-credits)
+10. [Acknowledgements](#id-acknowledgements)
 
 
 # Ux<div id='id-ux'>
@@ -135,6 +136,9 @@ The user is presented with a message once they have won or lost. Below the text 
    * There was only one problem I encountered while developing this website, and it was not an issue with the website itself. When I first tried to use jshint, I was getting a lot of errors which read "'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)." I had no idea what they were about. I Googled it and was unable to find an answer.
    * As a result, I went to Slack see if anyone else had this same issue. Someone was able to help. They explained that I would need to add /*jshint esversion: 6 */ at the top of the page, and then all these errors would be solved.
 
+## Unfixed Bugs<div id='id-unfixed'>
+   * There was an issue with the restart button when testing the website on an Iphone pro 12. The text in the button spilled over to the bottom border of the button. I tried adding padding to the button which improved the aesthetic of the button on most devices, but did not resolve the problem on the Iphone 12.  
+
 # Technologies Used<div id='id-tech'>
  * HTML5
  * CSS3 
@@ -164,7 +168,10 @@ The live link to this website can be found here - https://squirkey89.github.io/R
   * When coding the project I referenced the [love maths project](hhttps://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode)
   * Code was referenced from Dani Krossing's [YouTube channel](https://www.youtube.com/watch?v=kEf1xSwX5D8) when creating this website's Favicon.
   Here is the code:```link rel="shortcut icon" href="assets/images/android-chrome-192x192.png"```
-
+  * I also referenced code from whatsdev [YouTube channel](https://www.youtube.com/watch?v=Qqy8Ov3NWvQ) The code referenced is ```function generateComputerChoice() {
+	let choices = ['rock', 'paper', 'scissors'];
+	let randomNumber = Math.floor(Math.random() * choices.length);
+	return choices[randomNumber];```
 
 
 **Media**
